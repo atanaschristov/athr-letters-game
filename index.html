@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="letters">
+<head>
+	<title></title>
+	<link rel="stylesheet" href="css/main.css" />
+	<script type="text/ng-template" id="letter.html">
+ 		<div></div>
+	</script>
+	<script type="text/ng-template" id="game.html">
+ 		<div class="main">
+		</div>
+		<footer class="bottom">				
+		</footer>
+	</script>
+</head>
+<body ng-controller="RootController">
+	<section class="controls" ng-controller="ControlsController">
+		<button ng-click="toggle()">start/stop</button>
+		<div>
+			<input type="text" name="" value="0" placeholder="Score" ng-model="score">
+		</div>
+	</section>
+
+	<section class="gamespace">
+		<game ng-keypress="keyPressed()">
+		</game>
+ 	</section>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/letter-svc.js"></script>
+	<script src="js/letter-dre.js"></script>
+	<script src="js/controls-ctrl.js"></script>
+	<script src="js/game-dre.js"></script>
+	<script src="js/root-ctrl.js"></script>
+</body>
+</html>

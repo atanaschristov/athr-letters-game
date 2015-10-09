@@ -1,0 +1,32 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.controls {
+	width: 10%;
+	height: 100%;
+	float: right;
+}
+.controls input {
+	width: 30px;
+}
+.gamespace {
+	width: 90%;
+	height: 100%;
+	float: right;
+	position: absolute;
+}
+
+.gamespace  .main {
+	position: relative;
+	height: calc(100% - 90px);
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+}
+.gamespace  .bottom {
+	height: 90px;
+}
+
+letter {
+	font-size: 18px;
+}
